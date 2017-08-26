@@ -22,7 +22,7 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
         console.error("Couldn't extract key from " + tab.url);
         return;
     }
-    var downloadUrl = "http://www.mixcloud-downloader.com" + matches[2] + "?utm_source=firefox-extension";
+    var downloadUrl = "http://www.mixcloud-downloader.com/dl/mixcloud" + matches[2] + "?utm_source=firefox-extension";
     browser.tabs.create({
         url: downloadUrl
     });
